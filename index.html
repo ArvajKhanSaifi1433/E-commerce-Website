@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecommerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Quicksand:wght@300;400;500;700&family=Roboto+Mono:wght@500&family=Roboto+Slab&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- Top Navbar Start -->
+
+    <div class="top-navbar">
+        <div class="top-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="other-links">
+            <button id="btn-login"><a href="login.html">Login</a></button>
+            <button id="btn-signup"><a href="signup.html">Signup</a></button>
+
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+
+    <!-- Top Navbar end -->
+
+
+    <section id="home-section">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="image/logo.png" class="img-fluid" alt="" width="150px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clothe.html">Clothe</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #1c1c50;">
+                                <li><a class="dropdown-item" href="#">T-shirt</a></li>
+                                <li><a class="dropdown-item" href="#">Hoodies</a></li>
+                                <li><a class="dropdown-item" href="#">Pants</a></li>
+                                <li><a class="dropdown-item" href="#">Soprts Shoes</a></li>
+                                <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+                                <li><a class="dropdown-item" href="#">Glasses</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section id="home" class="d-grid align-items-center py-5 py-lg-0 bg">
+        <div class="container d-flex align-items-center">
+            <div class="row gy-4">
+                <div class="col-lg-6 d-grid align-items-center">
+                    <div class="home-section">
+                        <div class="home-section-left">
+                            <h1 class="text-capitalize text-custom">biggest clothe sale up to 50% off</h1>
+                            <p>Consectetur adipisicing elit. Exercitationem odit veniam, omnis iure veritatis aliquam
+                                accusamus assumenda architecto mollitia minus?</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" id="custom-btn" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                SHOP NOW
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Arvj Khan Saifi</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            My Name is Arvaj Saifi i am from sambhal and i am full stack web developer.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="home-section-right-img">
+                        <img src="image/b2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="top-cards" class="py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card text-center card-section">
+                        <div class="card-section-img">
+                            <img src="image/topcard1.png" class="card-img-top img-fluid img-color" alt="...">
+                        </div>
+                        <div class="card-body p-0">
+                            <p class="small m-0">Sponsored <small class="fa-solid fa-exclamation"></small></p>
+                            <h4 class="card-title fw-bold ">Joker & Witch</h4>
+                            <p class="m-0 text-black fw-semibold text-custom mx-auto lead"><a href="#">Hannah Black
+                                    Marble Dial Grey Watch</a>
+                            </p>
+                            <div class="stars my-2">
+                                <small class="text-black">4.4</small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star-half-stroke"></small>
+                            </div>
+                            <div class="rupes d-flex align-items-center gap-2 justify-content-center mb-2">
+                                <div class="d-flex">
+                                    <small class="fa-sharp fa-solid fa-indian-rupee-sign mt-2"></small>
+                                    <h2>1036</h2>
+                                </div>
+                                <div class="d-flex align-self-end">
+                                    <small class="fa-sharp fa-solid fa-indian-rupee-sign mt-1 "
+                                        style="font-size: 10px;"></small>
+                                    <h6><strike>1,169</strike></h6>
+                                </div>
+                                <div class="align-self-end text-dark">
+                                    <h6>(63% off)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center card-section">
+                        <div class="card-section-img">
+                            <img src="image/topcard2.png" class="card-img-top img-fluid img-color" alt="...">
+                        </div>
+                        <div class="card-body p-0">
+                            <p class="small m-0">Sponsored <small class="fa-solid fa-exclamation"></small></p>
+                            <h4 class="card-title fw-bold ">Nike</h4>
+                            <p class="m-0 text-black fw-semibold text-custom mx-auto lead"><a href="#">Hannah Black
+                                    Marble Dial Grey Watch</a>
+                            </p>
+                            <div class="stars my-2">
+                                <small class="text-black">3.5</small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star-half-stroke"></small>
+                                <small class="fa-regular fa-star"></small>
+                            </div>
+                            <div class="rupes d-flex align-items-center gap-2 justify-content-center mb-2">
+                                <div class="d-flex">
+                                    <small class="fa-sharp fa-solid fa-indian-rupee-sign mt-2"></small>
+                                    <h2>3,496</h2>
+                                </div>
+                                <div class="d-flex align-self-end">
+                                    <small class="fa-sharp fa-solid fa-indian-rupee-sign mt-1 "
+                                        style="font-size: 10px;"></small>
+                                    <h6><strike>4,995</strike></h6>
+                                </div>
+                                <div class="align-self-end text-dark">
+                                    <h6>(30% off)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center card-section rounded border">
+                        <div class="card-section-img">
+                            <img src="image/topcard3.png" class="img-fluid carimg3" alt="">
+                        </div>
+                        <div class="border p-0">
+                            <p class="small m-0">Sponsored <small class="fa-solid fa-exclamation"></small></p>
+                            <h4 class="card-title fw-bold mb-2">College Beg</h4>
+                            <p class="m-0 text-black fw-semibold text-custom mx-auto lead"><a href="#">Hannah Black
+                                    Marble Dial Grey Watch</a>
+                            </p>
+                            <div class="stars my-2">
+                                <small class="text-black">4.4</small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star-half-stroke"></small>
+                            </div>
+                            <div class="rupes d-flex align-items-center gap-2 justify-content-center mb-2">
+                                <div class="d-flex">
+                                    <small class="fa-sharp fa-solid fa-indian-rupee-sign mt-2"></small>
+                                    <h2>799</h2>
+                                </div>
+                                <div class="d-flex align-self-end">
+                                    <small class="fa-sharp fa-solid fa-indian-rupee-sign mt-1 "
+                                        style="font-size: 10px;"></small>
+                                    <h6><strike>3,199</strike></h6>
+                                </div>
+                                <div class="align-self-end text-dark">
+                                    <h6>(75% off)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="py-5">
+        <div class="container py-sm-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-9 col-sm-11 text-center">
+                    <h1 class="text-custom text-white">Get Up To 50% Off</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, vel.</p>
+                    <button id="custom-btn" class="border border-2 border-white text-white bg-transparent">SHOP
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Product Card" class="bg py-2">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-semibold">Products</h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4">
+                <div class="col">
+                    <div class="card h-100 shadow-lg">
+                        <img src="image/p10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h2 class="card-title px-3">Girls Sandle</h2>
+                            <p class="m-0 mb-2 card-text px-3 text-black">This content is little longer.</p>
+                            <div class="stars px-3">
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                            </div>
+                            <div class="px-3 d-flex align-items-center justify-content-between mb-3">
+                                <big><strong>$5.60 <strike class="small">$11.99</strike></strong></big>
+                                <big class="shoping"><i class="fa-solid fa-cart-shopping"></i></big>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg">
+                        <img src="image/p11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h2 class="card-title px-3">White Huddy</h2>
+                            <p class="m-0 mb-2 card-text px-3 text-black">This content is little longer.</p>
+                            <div class="stars px-3">
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                            </div>
+                            <div class="px-3 d-flex align-items-center justify-content-between mb-3">
+                                <big><strong>$5.60 <strike class="small">$11.99</strike></strong></big>
+                                <big class="shoping"><i class="fa-solid fa-cart-shopping"></i></big>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg">
+                        <img src="image/p12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h2 class="card-title px-3">Black T-Shirt</h2>
+                            <p class="m-0 mb-2 card-text px-3 text-black">This content is little longer.</p>
+                            <div class="stars px-3">
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                            </div>
+                            <div class="px-3 d-flex align-items-center justify-content-between mb-3">
+                                <big><strong>$5.60 <strike class="small">$11.99</strike></strong></big>
+                                <big class="shoping"><i class="fa-solid fa-cart-shopping"></i></big>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg">
+                        <img src="image/p20.png" class="card-img-top" alt="...">
+                        <div class="card-body p-0 pt-lg-4 pt-sm-4 pt-md-0">
+                            <h2 class="card-title px-3">White T-shirt</h2>
+                            <p class="m-0 mb-2 card-text px-3 text-black">This content is little longer.</p>
+                            <div class="stars px-3">
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                            </div>
+                            <div class="px-3 d-flex align-items-center justify-content-between mb-3">
+                                <big><strong>$5.60 <strike class="small">$11.99</strike></strong></big>
+                                <big class="shoping"><i class="fa-solid fa-cart-shopping"></i></big>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg">
+                        <img src="image/p14.png" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h2 class="card-title px-3">Stylish Sandle</h2>
+                            <p class="m-0 mb-2 card-text px-3 text-black">This content is little longer.</p>
+                            <div class="stars px-3">
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                            </div>
+                            <div class="px-3 d-flex align-items-center justify-content-between mb-3">
+                                <big><strong>$5.60 <strike class="small">$11.99</strike></strong></big>
+                                <big class="shoping"><i class="fa-solid fa-cart-shopping"></i></big>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg">
+                        <img src="image/p15.png" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h2 class="card-title px-3">Campus Shose</h2>
+                            <p class="m-0 mb-2 card-text px-3 text-black">This content is little longer.</p>
+                            <div class="stars px-3">
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                            </div>
+                            <div class="px-3 d-flex align-items-center justify-content-between mb-3">
+                                <big><strong>$5.60 <strike class="small">$11.99</strike></strong></big>
+                                <big class="shoping"><i class="fa-solid fa-cart-shopping"></i></big>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg">
+                        <img src="image/p16.png" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h2 class="card-title px-3">Shirt</h2>
+                            <p class="m-0 mb-2 card-text px-3 text-black">This content is little longer.</p>
+                            <div class="stars px-3">
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                            </div>
+                            <div class="px-3 d-flex align-items-center justify-content-between mb-3">
+                                <big><strong>$5.60 <strike class="small">$11.99</strike></strong></big>
+                                <big class="shoping"><i class="fa-solid fa-cart-shopping"></i></big>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg">
+                        <img src="image/p17.png" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h2 class="card-title px-3">T-Shirt</h2>
+                            <p class="m-0 mb-2 card-text px-3 text-black">This content is little longer.</p>
+                            <div class="stars px-3">
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                                <small class="fa-solid fa-star"></small>
+                            </div>
+                            <div class="px-3 d-flex align-items-center justify-content-between mb-3">
+                                <big><strong>$5.60 <strike class="small">$11.99</strike></strong></big>
+                                <big class="shoping"><i class="fa-solid fa-cart-shopping"></i></big>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 text-center">
+                    <button id="custom-btn" class="fst-italic fs-5 mt-2">View More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <hr>
+            <div class="row px-1">
+                <div class="col-12">
+                    <h2 class="text-uppercase">Product.</h2>
+                </div>
+                <div class="col-12">
+                    <p class="m-0 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse est
+                        harum? Enim, molestias fuga? Consequatur voluptatibus quasi facilis exercitationem nemo aut
+                        voluptas? Minus perferendis excepturi tenetur! Nihil numquam tempora reiciendis eveniet sed
+                        architecto ipsa, culpa vitae aliquam, consectetur exercitationem, ratione dolor sequi hic
+                        molestiae quae nulla explicabo voluptas facere autem qui similique. Eaque, debitis. Suscipit qui
+                        nulla pariatur dignissimos illum esse vitae, ex distinctio. Eos aliquam impedit ducimus deserunt
+                        expedita dolorum ab dignissimos at possimus excepturi molestiae quam.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+
+    <section id="offer" class="pb-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-3 text-center">
+                    <div class="offer-section">
+                        <div class="offer-icon">
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="offer-content">
+                            <h5 class="m-0">Free shopping</h5>
+                            <p class="pt-1">On order over $100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <div class="offer-section">
+                        <div class="offer-icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div class="offer-content">
+                            <h5 class="m-0">Fast Delivery</h5>
+                            <p class="pt-1">World Wide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <div class="offer-section">
+                        <div class="offer-icon">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+                        <div class="offer-content">
+                            <h5 class="m-0">Big Choice</h5>
+                            <p class="pt-1">Of Product</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <div class="offer-section">
+                        <div class="offer-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="offer-content">
+                            <h5 class="m-0">Best Food</h5>
+                            <p class="pt-1">Best Food in India.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-top py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <h4 class="fw-semibold">Fashion</h4>
+                        <p class="text-white m-0 my-2">Lamet consectetur adipisicing elit. Ullam, hero!</p>
+                        <p class="text-white m-0 mx-1"> <a href="#" class="text-white">Shambhal</a></p>
+                        <p class="text-white m-0 mx-1"> <a href="#" class="text-white">Amroha</a></p>
+                        <p class="text-white m-0 mx-1"> <a href="#" class="text-white">Ghazibad</a></p>
+                        <p class="text-white m-0 mt-2"><a class="fa-solid fa-phone fw-bold text-white" href="tel:8447861538"></a>Phone: +91-844-786-1538</p>
+                        <p class="text-white m-0 mx-1"><a class="fa-solid fa-envelope fw-bold text-white" href="mailto:arvajkhan91@gamil.com"></a>Email: arvajkhan@gamil.com</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h5 class="fw-semibold">UseFull Links</h5>
+                        <p class="m-0 mt-2 text-white"> <a href="index.html" class="text-white">Home</a></p>
+                        <p class="m-0 text-white"> <a href="about-us.html" class="text-white">About</a></p>
+                        <p class="m-0 text-white"> <a href="contact.html" class="text-white">Contact</a></p>
+                        <p class="m-0 text-white"> <a href="#" class="text-white">Service</a></p>
+                        <p class="m-0 text-white"> <a href="#" class="text-white">Privacy Policay</a></p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h5 class="fw-semibold">Our Services</h5>
+                        <p class="m-0 my-2 text-white"> <a href="#" class="text-white">Lorem ipsum dolor sit consectetur adipisicing.</a></p>
+                        <p class="m-0 text-white"> <a href="#" class="text-white">T-shirt</a></p>
+                        <p class="m-0 text-white"> <a href="#" class="text-white">Smart Watch</a></p>
+                        <p class="m-0 text-white"> <a href="#" class="text-white">Shose</a></p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h5 class="fw-semibold">Our Social Links</h5>
+                        <p class="m-0 my-2 text-white"> <a href="#" class="text-white">Lorem ipsum dolor sit amet ArvajLorem ipsum dolor.</a></p>
+                        <a href="http://www.instagracom" class="fs-3 text-light ri-instagram-fill"></a>
+                        <a href="http://www.instagracom" class="fs-3 text-light ms-2 ri-facebook-box-fill"></a>
+                        <a href="http://www.instagracom" class="fs-3 text-light ms-2 ri-linkedin-box-fill"></a>
+                        <a href="http://www.instagracom" class="fs-3 text-light ms-2 ri-youtube-fill"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom py-4">
+            <div class="container">
+                <div class="row row-cols-auto justify-content-between">
+                    <div class="col-auto">
+                        <p class="text-white">&copy;Copyright Fashion All Rights Records.</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="text-white">Designed By <a href="#" class="text-primary"><em>Arvaj Saifi</em></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
